@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #FFE600;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.navbar {
+    padding: 7.5px;
+    display: grid;
+    grid-template-columns: 1.1fr 600px 2.9fr;
+    grid-template-rows: repeat(2,40px);
+    gap: 1em;
+}
+
+.navbar .navbar-left-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .navbar-left-up #merc-logo {
+    margin-top: 7.5px;
+    width: 165px;
+}
+
+.navbar .navbar-mid-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.navbar .navbar-mid-up #searchbar {
+    height: 40px;
+    width: 550px;
+    border-radius: 2.5px;
+    box-shadow: 2px 2px 4px rgba(60, 60, 60, 0.25);
+    border: 0.5px;
+    border-color: rgb(60, 60, 60);
+    font-size: 16px;
+    font-weight: light;
+    color: rgb(70, 70, 70);
+}
+
+.navbar .navbar-mid-up #searchbar-button {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    color: rgb(100, 100, 100);
+    border-radius: 2.5px;
+    box-shadow: 2px 2px 4px rgba(60, 60, 60, 0.25);
+    border: 0.5px;
+    border-color: rgb(60, 60, 60);
+}
+
+.navbar .navbar-right-up {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.navbar .navbar-right-up #disn-logo {
+    margin-top: 5px;
+    height: 45px;
+}
+
+.navbar .navbar-left-down {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+    padding: 7.5px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 2.75px;
+    transition: .2s;
+}
+
+.navbar .navbar-left-down:hover {
+    background-color: #dac400;
+}
+
+.navbar .navbar-left-down #ubicacion-ico {
+    height: 25px;
+}
+
+.navbar .navbar-left-down .navbar-left-down-text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-weight: 320;
+    padding-left: 5px;
+}
+
+.navbar .navbar-left-down .navbar-left-down-text #texto-enviar{
+    font-size: 12px;
+    color: rgb(100, 100, 100);
+}
+
+.navbar .navbar-left-down .navbar-left-down-text #texto-ciudad-cp{
+    font-size: 12.5px;
+    white-space: nowrap;
+}
+
+.navbar .navbar-mid-down {
+    display: flex;
+    font-size: 14px;
+    font-weight: 320;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.navbar .navbar-mid-down .navbar-menu a{
+    text-decoration: none;
+    color: rgb(30, 30, 30);
+    padding: 5px;
+    transition: .1s;
+}
+
+.navbar .navbar-mid-down .navbar-menu a span{
+    color: grey;
+}
+
+.navbar .navbar-mid-down .navbar-menu a:hover{
+    color: rgb(70, 70, 70);
+}
+
+.navbar .navbar-right-down {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 320;
+    justify-content: end;
+    align-items: center;
+}
+
+.navbar .navbar-right-down #carrito {
+    height: 15px;
+}
+
+.navbar .navbar-right-down a{
+    padding: 7.5px;
+    text-decoration: none;
+    color: rgb(30, 30, 30);
+    transition: .1s;
+    white-space: nowrap;
+}
+
+.navbar .navbar-right-down a:hover{
+    color: rgb(70, 70, 70);
+}
